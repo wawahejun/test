@@ -1,0 +1,230 @@
+{
+  "dataset_info": {
+    "sample_count": 50,
+    "avg_text_length": 314.62
+  },
+  "text_vocabulary_analysis": {
+    "total_chars": 15780,
+    "total_words": 3130,
+    "unique_words": 1035,
+    "unique_chars": 52,
+    "word_repetition_rate": 66.93290734824281,
+    "most_common_words": [
+      [
+        "the",
+        217
+      ],
+      [
+        ",",
+        168
+      ],
+      [
+        ".",
+        121
+      ],
+      [
+        "of",
+        110
+      ],
+      [
+        "to",
+        73
+      ],
+      [
+        "in",
+        70
+      ],
+      [
+        "and",
+        65
+      ],
+      [
+        "a",
+        54
+      ],
+      [
+        "his",
+        42
+      ],
+      [
+        "was",
+        41
+      ],
+      [
+        "\"",
+        36
+      ],
+      [
+        "he",
+        34
+      ],
+      [
+        "'s",
+        30
+      ],
+      [
+        "on",
+        28
+      ],
+      [
+        "for",
+        28
+      ],
+      [
+        "du",
+        24
+      ],
+      [
+        "fu",
+        22
+      ],
+      [
+        "had",
+        22
+      ],
+      [
+        "is",
+        20
+      ],
+      [
+        "by",
+        20
+      ]
+    ]
+  },
+  "model_tokenization_analysis": {
+    "model_vocab_size": 0,
+    "total_tokens": 427,
+    "unique_tokens_used": 205,
+    "vocab_utilization_rate": 20500.0,
+    "tokenization_results": [
+      {
+        "text_preview": "Du Fu ( Wade – Giles : Tu Fu ; Chinese : ; – 770 ) was a prominent Chinese poet of the Tang dynasty ...",
+        "token_count": 118,
+        "tokens_preview": [
+          1,
+          21152,
+          34986,
+          1426,
+          1495,
+          1958,
+          1991,
+          1527,
+          4443,
+          1921
+        ],
+        "unique_tokens_in_text": 76
+      },
+      {
+        "text_preview": "Most of what is known of Du Fu 's life comes from his poems . His paternal grandfather was Du , a no...",
+        "token_count": 106,
+        "tokens_preview": [
+          1,
+          8013,
+          1379,
+          2024,
+          1410,
+          3263,
+          1379,
+          21152,
+          34986,
+          1772
+        ],
+        "unique_tokens_in_text": 75
+      },
+      {
+        "text_preview": "Du Fu 's mother died shortly after he was born , and he was partially raised by his aunt . He had an...",
+        "token_count": 66,
+        "tokens_preview": [
+          1,
+          21152,
+          34986,
+          1772,
+          59328,
+          8184,
+          6982,
+          20923,
+          2055,
+          1544
+        ],
+        "unique_tokens_in_text": 47
+      },
+      {
+        "text_preview": "The son of a minor scholar - official , his youth was spent on the standard education of a future ci...",
+        "token_count": 62,
+        "tokens_preview": [
+          1,
+          1507,
+          6410,
+          1379,
+          1348,
+          9096,
+          15190,
+          59320,
+          63,
+          1345
+        ],
+        "unique_tokens_in_text": 48
+      },
+      {
+        "text_preview": "His father died around 740 . Du Fu would have been allowed to enter the civil service because of his...",
+        "token_count": 75,
+        "tokens_preview": [
+          1,
+          5884,
+          8279,
+          6982,
+          2914,
+          59320,
+          59387,
+          59370,
+          59344,
+          59320
+        ],
+        "unique_tokens_in_text": 56
+      }
+    ],
+    "most_common_tokens": [
+      [
+        59320,
+        20
+      ],
+      [
+        3046,
+        19
+      ],
+      [
+        1379,
+        16
+      ],
+      [
+        1358,
+        16
+      ],
+      [
+        72,
+        16
+      ],
+      [
+        1345,
+        12
+      ],
+      [
+        1859,
+        11
+      ],
+      [
+        1523,
+        9
+      ],
+      [
+        1348,
+        8
+      ],
+      [
+        1544,
+        8
+      ]
+    ]
+  }
+}

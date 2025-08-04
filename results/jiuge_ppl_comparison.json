@@ -1,0 +1,112 @@
+{
+  "model_path": "/home/shared/models/jiuge9G4B",
+  "test_time": 468.8473000526428,
+  "datasets": {
+    "英文测试": {
+      "processed_samples": 4,
+      "total_samples": 4,
+      "total_tokens": 41,
+      "average_ppl": 6.286144460449524e+89,
+      "median_ppl": 3.057283387776261e+86,
+      "overall_ppl": 1.5871287748015325e+78,
+      "min_ppl": 1.0641942906733134e+62,
+      "max_ppl": 2.5138463275022545e+90,
+      "individual_results": [
+        {
+          "text": "The quick brown fox jumps over the lazy dog.",
+          "ppl": 1.0641942906733134e+62,
+          "token_count": 10,
+          "log_ppl": 142.82249374389647
+        },
+        {
+          "text": "Machine learning is a subset of artificial intelligence.",
+          "ppl": 1.4734859447984158e+71,
+          "token_count": 9,
+          "log_ppl": 163.8711725870768
+        },
+        {
+          "text": "Natural language processing enables computers to understand human language.",
+          "ppl": 2.5138463275022545e+90,
+          "token_count": 10,
+          "log_ppl": 208.15447235107422
+        },
+        {
+          "text": "Deep learning models have revolutionized many fields of artificial intelligence.",
+          "ppl": 6.11456677555252e+86,
+          "token_count": 12,
+          "log_ppl": 199.83299191792807
+        }
+      ]
+    },
+    "中文测试": {
+      "processed_samples": 4,
+      "total_samples": 4,
+      "total_tokens": 35,
+      "average_ppl": 1.492197403577223e+90,
+      "median_ppl": 1.4360776797567437e+90,
+      "overall_ppl": 1.8792588040727746e+79,
+      "min_ppl": 5.388723040540258e+57,
+      "max_ppl": 3.096634254795404e+90,
+      "individual_results": [
+        {
+          "text": "你好，今天天气很好。",
+          "ppl": 5.388723040540258e+57,
+          "token_count": 8,
+          "log_ppl": 132.931658744812
+        },
+        {
+          "text": "人工智能是计算机科学的一个分支。",
+          "ppl": 3.096634254795404e+90,
+          "token_count": 8,
+          "log_ppl": 208.36297416687012
+        },
+        {
+          "text": "深度学习在图像识别领域取得了巨大成功。",
+          "ppl": 2.8721553595134874e+90,
+          "token_count": 11,
+          "log_ppl": 208.28772111372515
+        },
+        {
+          "text": "自然语言处理技术正在快速发展。",
+          "ppl": 1.664484169774004e+74,
+          "token_count": 8,
+          "log_ppl": 170.90081214904785
+        }
+      ]
+    },
+    "混合测试": {
+      "processed_samples": 3,
+      "total_samples": 3,
+      "total_tokens": 36,
+      "average_ppl": 1.9194842363724369e+74,
+      "median_ppl": 2.75579758434252e+70,
+      "overall_ppl": 2.6925005855260593e+66,
+      "min_ppl": 2.8179820732188235e+54,
+      "max_ppl": 5.758177129358876e+74,
+      "individual_results": [
+        {
+          "text": "Hello 你好，这是一个中英文混合的句子。",
+          "ppl": 2.8179820732188235e+54,
+          "token_count": 12,
+          "log_ppl": 125.3756160736084
+        },
+        {
+          "text": "AI人工智能 is changing the world 正在改变世界。",
+          "ppl": 5.758177129358876e+74,
+          "token_count": 11,
+          "log_ppl": 172.14191783558238
+        },
+        {
+          "text": "Machine Learning 机器学习 algorithms 算法 are powerful 很强大。",
+          "ppl": 2.75579758434252e+70,
+          "token_count": 13,
+          "log_ppl": 162.19466341458835
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_datasets": 3,
+    "successful_datasets": 3
+  }
+}

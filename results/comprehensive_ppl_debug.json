@@ -1,0 +1,8 @@
+{
+  "debug_info": {
+    "timestamp": 1754241433.719802,
+    "logits_clipping_range": "[-20, 20]",
+    "test_purpose": "comprehensive_ppl_debug"
+  },
+  "results": []
+}

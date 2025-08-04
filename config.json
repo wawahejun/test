@@ -1,0 +1,135 @@
+{
+  "models": {
+    "base_dir": "/home/shared/models",
+    "test_models": [
+      {
+        "name": "jiuge9G4B",
+        "path": "jiuge9G4B",
+        "type": "original",
+        "description": "九歌9G4B模型",
+        "compatible_engines": ["infinicore"]
+      },
+      {
+        "name": "qwen3-1.7b",
+        "path": "Qwen3-1.7B",
+        "type": "original",
+        "description": "Qwen3 1.7B模型",
+        "compatible_engines": ["infinicore", "infinim"]
+      },
+      {
+        "name": "tinyllama",
+        "path": "TinyLlama",
+        "type": "original",
+        "description": "TinyLlama模型",
+        "compatible_engines": ["infinicore", "infinim"]
+      },
+      {
+        "name": "mamba-2.8b",
+        "path": "mamba-2.8b-hf",
+        "type": "original",
+        "description": "Mamba 2.8B模型",
+        "compatible_engines": ["infinim"]
+      },
+      {
+        "name": "mixtral-8x7b",
+        "path": "Mixtral-8x7B-v0.1-HF",
+        "type": "original",
+        "description": "Mixtral 8x7B MoE模型",
+        "compatible_engines": ["infinim"]
+      },
+      {
+        "name": "fm9g-70b",
+        "path": "FM9G_70B_SFT_MHA",
+        "type": "original",
+        "description": "FM9G 70B SFT MHA模型",
+        "compatible_engines": ["infinicore"]
+      }
+    ]
+  },
+  "engines": {
+    "infinicore": {
+      "script_path": "../c_reasoning/InfiniCore-Infer/scripts",
+      "enabled": true,
+      "description": "InfiniCore-Infer C推理引擎"
+    },
+    "infinim": {
+      "module_name": "infinim_rust",
+      "enabled": true,
+      "description": "InfiniM Rust推理引擎"
+    }
+  },
+  "datasets": {
+    "wikitext": {
+      "path": "./datasets/wikitext-2-raw-v1_processed.json",
+      "description": "WikiText-2数据集"
+    },
+    "sample": {
+      "path": "./datasets/sample_dataset.json",
+      "description": "示例测试数据集"
+    }
+  },
+  "benchmark_frameworks": {
+    "ollama": {
+      "url": "http://localhost:11434",
+      "enabled": true,
+      "models": {
+        "jiuge9G4B": "jiuge:latest",
+        "qwen3-1.7b": "qwen2.5:1.5b",
+        "tinyllama": "tinyllama:latest",
+        "mamba-2.8b": "mamba:latest",
+        "mixtral-8x7b": "mixtral:8x7b"
+      }
+    },
+    "vllm": {
+      "url": "http://localhost:8000",
+      "enabled": true,
+      "models": {
+        "jiuge9G4B": "jiuge-9g4b",
+        "qwen3-1.7b": "Qwen/Qwen2.5-1.5B",
+        "tinyllama": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "mamba-2.8b": "state-spaces/mamba-2.8b-hf",
+        "mixtral-8x7b": "mistralai/Mixtral-8x7B-v0.1"
+      }
+    }
+  },
+  "test_settings": {
+    "max_samples_per_dataset": 100,
+    "max_tokens_per_sample": 50,
+    "ppl_calculation": {
+      "method": "sliding_window",
+      "window_size": 1
+    },
+    "output": {
+      "results_dir": "./results",
+      "save_detailed_logs": true,
+      "generate_plots": false
+    }
+  },
+  "comparison_targets": {
+    "engine_vs_official": {
+      "description": "自研引擎 vs 官方框架对比",
+      "enabled_comparisons": {
+        "infinicore_vs_ollama": {
+          "engine": "infinicore",
+          "benchmark": "ollama",
+          "models": ["jiuge9G4B", "qwen3-1.7b", "tinyllama"]
+        },
+        "infinicore_vs_vllm": {
+          "engine": "infinicore",
+          "benchmark": "vllm",
+          "models": ["jiuge9G4B", "qwen3-1.7b", "tinyllama"]
+        },
+        "infinim_vs_ollama": {
+          "engine": "infinim",
+          "benchmark": "ollama",
+          "models": ["qwen3-1.7b", "tinyllama", "mamba-2.8b", "mixtral-8x7b"]
+        },
+        "infinim_vs_vllm": {
+          "engine": "infinim",
+          "benchmark": "vllm",
+          "models": ["qwen3-1.7b", "tinyllama", "mamba-2.8b", "mixtral-8x7b"]
+        }
+      }
+    }
+  }
+}

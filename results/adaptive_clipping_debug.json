@@ -1,0 +1,11 @@
+{
+  "model_path": "/home/shared/models/jiuge9G4B",
+  "vocab_size": 73448,
+  "test_results": [],
+  "summary": {
+    "total_tests": 0,
+    "avg_unique_values": 0,
+    "avg_max_single_value_percentage": 0,
+    "avg_prob_sum": 0
+  }
+}

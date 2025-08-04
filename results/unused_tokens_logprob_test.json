@@ -1,0 +1,75 @@
+{
+  "used_tokens_count": 306,
+  "model_vocab_size": 73448,
+  "vocab_utilization_rate": 0.41662128308463126,
+  "logprob_analysis": {
+    "total_tokens": 73448,
+    "used_tokens_count": 306,
+    "unused_tokens_count": 73142,
+    "all_logprobs_stats": {
+      "min": -48.88129806518555,
+      "max": -8.881298065185547,
+      "mean": -34.95612921817099,
+      "std": 12.772903796634196
+    },
+    "used_logprobs_stats": {
+      "min": -48.88129806518555,
+      "max": -8.881298065185547,
+      "mean": -36.7975383085363,
+      "std": 17.07629584191886
+    },
+    "unused_logprobs_stats": {
+      "min": -48.88129806518555,
+      "max": -8.881298065185547,
+      "mean": -34.948425420330466,
+      "std": 12.751291132376828
+    },
+    "unique_values_count": 837,
+    "extreme_counts": {
+      "very_low": 66232,
+      "very_high": 0
+    }
+  },
+  "ppl_test": {
+    "text": "The quick brown fox",
+    "tokens": [
+      1,
+      1507,
+      4766,
+      13329,
+      49712
+    ],
+    "token_details": [
+      {
+        "position": 0,
+        "target_token": 1507,
+        "logprob": -8.881298065185547,
+        "prob": 0.00013896366454106148,
+        "in_dataset": true
+      },
+      {
+        "position": 1,
+        "target_token": 4766,
+        "logprob": -48.87551498413086,
+        "prob": 5.937909062581215e-22,
+        "in_dataset": false
+      },
+      {
+        "position": 2,
+        "target_token": 13329,
+        "logprob": -48.501319885253906,
+        "prob": 8.632655475600466e-22,
+        "in_dataset": false
+      },
+      {
+        "position": 3,
+        "target_token": 49712,
+        "logprob": -28.259002685546875,
+        "prob": 5.336678861151811e-13,
+        "in_dataset": false
+      }
+    ],
+    "avg_neg_log_prob": 33.6292839050293,
+    "ppl": 402728560997471.9
+  }
+}
