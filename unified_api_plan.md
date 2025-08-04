@@ -1,7 +1,5 @@
 # 推理引擎统一 API 与多模型适配方案
 
-> 版本: 0.1  作者: 自动生成  日期: 2024-05-23
-
 ---
 
 ## 1. 背景
@@ -97,4 +95,3 @@ infer_batch_with_logprobs.argtypes = infer_batch.argtypes + [ctypes.POINTER(ctyp
 
 
 ---
-> 如需更细化的任务拆分或接口示例，请在此文件后续章节补充。
